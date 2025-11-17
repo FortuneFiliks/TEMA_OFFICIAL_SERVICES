@@ -1,0 +1,431 @@
+
+/****************************************************START****************************************************/	
+	*{
+		padding : 0;
+		margin : 0;
+		box-sizing : border-box;
+	}
+	
+	:root{
+		--pri_color :#002875;
+		--sec_color :#7a0632;
+		--bg_color :#eff6ff;
+	}
+	body{
+		background-color : #f0f4fd;
+	}
+/*************************************TEXT ANIMATION*************************************/	
+	
+	
+    .char{
+        font-size: 4.5rem;
+        display: inline-block;
+        animation: an 1s ease-out 1 both;
+    	background : repeating-linear-gradient(to right,#AE8626,#F7EF8A,#D2AC47,#EDC967);
+    	-webkit-text-fill-color :transparent;
+    	background-clip : text;	
+    }	
+	
+	
+	
+    .char_animated{
+        animation: an 1s ease-out 1 both;		
+    }
+
+
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+    }	
+	
+	
+	
+	
+	
+	
+/******************************MOBILE NAV SECTION******************************/
+	.mobile_menu_section{
+        width : 100%;
+	    height : 100%;
+		margin-top : 65px;
+		background :#DBEAFF;
+		display : none;
+		position : fixed;
+		z-index :5;
+	}
+	.mobile_nav_item{
+		text-align : center;
+		padding : 7.5px 0 7.5px 0;
+	}
+	.mobile_nav_link{
+		font-weight : 700;
+		color : #223a66;
+		text-align : center;
+		font-size : 1.5rem;
+		cursor : pointer;
+	}
+
+
+/******************************FIRST SECTION******************************/
+    .first_section{
+        width : 100%;
+		min-height : 40dvh;
+		min-height : 40vh;
+        background-image: url("../IMAGES/Untitled design-6_page-0001.webp");
+		background-size : cover;
+	}
+    .first_section .first_section_content{		
+        width : 100%;
+	}
+	
+	.first_section_heading{
+		padding-left : 20px;
+		padding-top : 150px;
+        background-image: repeating-linear-gradient(45deg,#e12454 35%,#223a66 65%);	
+		-webkit-text-fill-color : transparent;
+		background-clip : text;
+		display : inline-block;
+		font-size : 2.15rem;
+		font-weight : 700;
+		text-shadow : 2px 2px #3e3e3e4c;
+	}
+	
+/*******************************FLEX LEFT ITEM ANIMATION**************************/
+    @keyframes flex_left_item_animation{
+		from{
+			transform : scale(0);
+		}
+		to{
+			
+			transform : scale(1);
+			
+		}
+		
+		
+	}
+	
+	.flex_left_item_animation_class{
+		animation-name : flex_left_item_animation;
+		animation-duration : 3s;
+		animation-fill-mode : forwards;
+	}
+	
+/*******************************SECOND SECTION**************************/
+    .second_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	.second_section .second_section_content{
+		width : 100%;
+	}
+	
+	.second_section .second_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+	}
+	
+	.second_section .second_section_flex_left_item{
+		background-image : url("../IMAGES/mohammad-rahmani-_Fx34KeqIEw-unsplash4.webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;
+		height : 400px;
+	}
+	
+	.second_section .second_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #0000007F;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;		
+	}
+	
+	.second_section .second_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 200px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;		
+	}
+	
+	.second_section .second_section_flex_right_item{
+		width : 100%;
+		margin : 25px 0 0 0;
+		font-size : 1rem;
+	}	
+	
+/*******************************THIRD SECTION**************************/
+    .third_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	.third_section .third_section_content{
+		width : 100%;
+	}
+	.third_section .third_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+		align-items : center;
+	}
+	
+	.third_section .third_section_flex_left_item{
+		background-image : url("../IMAGES/emily-bernal-v9vII5gV8Lw-unsplash4.webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;		
+		height : 400px;		
+	}
+	
+	.third_section .third_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #000000CC;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;		
+	}
+	
+	.third_section .third_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 184px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;		
+	}
+	
+	.third_section .third_section_flex_right_item{
+		width : 100%;
+		margin-left : 0px;
+		font-size : 1rem;
+		margin : 25px 0 0 0;		
+	}	
+
+/*******************************FOURTH SECTION**************************/
+    .fourth_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	.fourth_section .fourth_section_content{
+		width : 100%;
+	}
+	
+	.fourth_section .fourth_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+		align-items : center;
+	}
+	
+	.fourth_section .fourth_section_flex_left_item{
+		background-image : url("../IMAGES/corporate-management-strategy-solution-branding-concept.webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;
+		height : 400px;
+	}
+	
+	.fourth_section .fourth_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #000000CC;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;		
+	}
+	
+	.fourth_section .fourth_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 184px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;
+	}
+	
+	.fourth_section .fourth_section_flex_right_item{
+		width : 100%;
+		margin-left : 0px;
+		font-size : 1rem;
+		margin : 25px 0 0 0;		
+	}
+
+/*******************************FIFTH SECTION**************************/
+    .fifth_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	.fifth_section .fifth_section_content{
+		width : 100%;
+	}
+	
+	.fifth_section .fifth_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+		align-items : center;
+	}
+	
+	.fifth_section .fifth_section_flex_left_item{
+		background-image : url("../IMAGES/diggity-marketing-SB0WARG16HI-unsplash4.webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;	
+		height : 400px;
+	}
+	
+	.fifth_section .fifth_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #000000CC;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;		
+	}
+	
+	.fifth_section .fifth_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 184px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;		
+	}
+	
+	.fifth_section .fifth_section_flex_right_item{
+		width : 100%;
+		margin-left : 0px;
+		font-size : 1rem;
+		margin : 25px 0 0 0;		
+	}
+
+
+/*******************************SIXTH SECTION**************************/
+    .sixth_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	
+	.sixth_section .sixth_section_content{
+		width : 100%;
+	}
+	
+	.sixth_section .sixth_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+		align-items : center;
+	}
+	
+	.sixth_section .sixth_section_flex_left_item{
+		background-image : url("../IMAGES/merakist-l5if0iQfV4c-unsplash4(1).webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;	
+		height : 400px;
+	}
+	
+	.sixth_section .sixth_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #000000CC;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+	}
+	
+	.sixth_section .sixth_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 184px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;		
+	}
+	
+	.sixth_section .sixth_section_flex_right_item{
+		width : 100%;
+		margin-left : 0px;
+		font-size : 1rem;
+		margin : 25px 0 0 0;		
+	}
+	
+/*******************************SEVENTH SECTION**************************/
+    .seventh_section{
+		width : 100%;
+		min-height : auto;
+		padding : 4rem 2rem 0 2rem;
+	}
+	.seventh_section .seventh_section_content{
+		width : 100%;
+	}
+	
+	.seventh_section .seventh_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+		height : 800px;
+		align-items : center;
+	}
+	
+	.seventh_section .seventh_section_flex_left_item{
+		background-image : url("../IMAGES/hans-eiskonen-wn57cSQ7VzI-unsplash4.webp");
+		width  : 100%;
+		background-size : cover;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;
+		transform : scale(0);
+		transform-origin:center center;	
+		height : 400px;
+	}
+	
+	.seventh_section .seventh_section_heading_container{
+		width : 100%;
+		height : 100%;
+		background : #000000CC;
+	    border-top-left-radius : 25px;
+	    border-bottom-right-radius : 25px;		
+	}
+	
+	.seventh_section .seventh_section_heading{
+       font-size : 1.75rem;
+	   padding-top : 184px;
+       font-weight : 700;
+	   color :  #cce1ff;
+	   text-align : center;		
+	}
+	
+	.seventh_section .seventh_section_flex_right_item{
+		width : 100%;
+		margin-left : 0px;
+		font-size : 1rem;
+		margin : 25px 0 0 0;		
+	}	
+	
+	
+/****************************************************END****************************************************/  
